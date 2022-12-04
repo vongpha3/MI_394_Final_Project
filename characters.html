@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Characters</title>
+</head>
+<body>
+    <nav>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="characters.html">Characters</a>
+    </nav>
+
+    <div class="char-head">
+        <!-- Reference: https://stackoverflow.com/questions/11694175/how-to-make-the-button-image-fill-it -->
+        <input type="image" onclick="highlight('laurna')" class="head" id="laurna" src="images/Test_2.png" alt="Laurna"></input>
+        <input type="image" onclick="highlight('laputa')" class="head" id="laputa" src="images/Test.png" alt="Laputa"></input>
+
+    </div>
+
+    <div class="char-body">
+
+        <input type="image" onclick="arrowClick('left')" class="arrow" id="left" src="images/Test_Full.png" alt="left arrow"></input>
+
+        <div class="info-bg">
+            <img id="file" src="images/placeholder.png" alt="file image">
+            <div class="char-info">
+                <img id="fullbody" src="images/Test_Full_2.png" alt="character image">
+                <div id="text">
+                    <h1>Laurna Hase</h1>
+                    <h2>Bewildered Butcher</h2>
+                    <p>Test test testffsdfsdfsadfhsdfhsdjkfhsljfdhsdjfhsjfhsakfhuekdjfskjfskjdfdjskfhldshkl</p>
+                </div>
+            </div>
+        </div>
+    
+        <input type="image" onclick="arrowClick('right')" class="arrow" id="right" src="images/Test_Full.png" alt="right arrow"></input>
+
+    </div>
+
+    <script src="characters.js"></script>
+</body>
+</html>
