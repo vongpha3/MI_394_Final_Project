@@ -1,3 +1,4 @@
+/* Universal */
 body {
 
     background-color: #3C0200;
@@ -7,7 +8,7 @@ nav {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #A00000;
     font-weight: bold;
@@ -22,6 +23,89 @@ nav {
     color: #ffffff;
 }
 
+.title {
+
+    text-align: center;
+    text-shadow: rgb(255, 0, 0) 1px 0 10px;
+    color: #ffffff;
+
+}
+
+/* index.html */
+
+.container {
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    
+    /* Reference: https://stackoverflow.com/questions/5135019/css-opacity-only-to-background-color-not-the-text-on-it */
+    background-color: rgba(160, 0, 0, 0.5);
+    color: #ffffff;
+
+}
+
+.container-2 {
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+
+}
+
+/* #setting {
+
+    background-image: url("images/placeholder.png");
+
+} */
+
+.head-home {
+
+    height: 18vh;
+    
+}
+
+.game-info {
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: #e1e1e1; 
+}
+
+#info-table td {
+    border: 1px solid #ffffff;
+    padding: 8px;
+}
+
+#info-table {
+    margin:auto;
+    border-collapse: collapse;
+}
+
+.bold {
+
+    color: #ffffff;
+    font-weight: bold;
+
+}
+
+.info {
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* characters.html */
+
 .char-head {
 
     display: flex;
@@ -35,23 +119,20 @@ nav {
 
 }
 
-.head {
+
+.head-shot {
     height: 18vh;
     opacity: 0.5;
 }
 
-.head-home {
-
-    height: 18vh;
-    
-}
-
+/* Starting highlighted image */
 #laurna {
 
     opacity: 1;
 
 }
 
+/* Character info section */
 .info-bg {
 
     display: flex;
@@ -59,6 +140,14 @@ nav {
     position: relative;
 
     height: 100vh;
+
+}
+
+#file {
+
+    height: 120vh;
+    position: absolute;
+    z-index: -1;
 
 }
 
@@ -75,14 +164,6 @@ nav {
     width: 70vw;
 
     z-index: 1;
-
-}
-
-#file {
-
-    height: 120vh;
-    position: absolute;
-    z-index: -1;
 
 }
 
@@ -103,42 +184,6 @@ nav {
 
 }
 
-/* .container {
-
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-
-} */
-
-.container {
-
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-items: center;
-    
-    /* Reference: https://stackoverflow.com/questions/5135019/css-opacity-only-to-background-color-not-the-text-on-it */
-    background-color: rgba(160, 0, 0, 0.5);
-    color: #ffffff;
-    margin-top: 2%;
-
-}
-
-.game-info {
-
-    color: #ffffff;
-    
-}
-
-.arrow {
-
-    height: 100px;
-
-}
-
 .char-body {
 
     display: flex;
@@ -149,5 +194,11 @@ nav {
 
     margin-left: 5%;
     margin-right: 5%;
+
+}
+
+.arrow {
+    
+    height: 100px;
 
 }

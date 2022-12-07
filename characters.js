@@ -6,7 +6,7 @@ let char_list = [
 
 ]
 
-let buttons = document.getElementsByClassName("head");
+let buttons = document.getElementsByClassName("head-shot");
 let image = document.getElementById("fullbody");
 let info = document.getElementById("text");
 let children = info.children;
