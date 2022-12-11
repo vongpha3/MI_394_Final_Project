@@ -1,6 +1,9 @@
 let char_list = [
 
-    {id: "laurna", name: "Laurna Hase", flavor: "Bewildered Butcher", img: "images/Test_Full_2.png", desc: ""},
+    {id: "natasha", name: "Natasha Grazun", flavor: "The Girl in Question", img: "images/Test_Full_3.png", 
+        desc: "Natasha (aka The Rat) is more comparable to a clever mouse: quiet, cunning and always inquisitive. She has a habit of making your business her business and using her wit to solve them. Many are disarmed by her small and messy appearance, and all are in debate if the look is deliberate or from disinterest in such things."},
+    {id: "laurna", name: "Laurna Hase", flavor: "Bewildered Butcher", img: "images/Test_Full_2.png", 
+        desc: ""},
     {id: "laputa", name: "Laputa Lanhki", flavor: "The Scheming Snake", img: "images/Test_Full.png", desc: ""},
     //{id: 2, name: "", flavor: "", img: "", desc: ""},
 
