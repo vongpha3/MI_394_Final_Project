@@ -1,6 +1,6 @@
 /* Universal */
 body {
-
+    margin: 0%;
     background-color: #3C0200;
 }
 
@@ -12,15 +12,33 @@ nav {
     align-items: center;
     background-color: #A00000;
     font-weight: bold;
-    font-size: large;
+    font-size: larger;
+}
+
+p {
+    font-size: larger;
+}
+
+.logo {
+
+    height: 12vh;
+
 }
 
 .nav-link:link {
     color: #ffffff;
+    text-decoration: none;
 }
 
 .nav-link:visited {
     color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+
+    opacity: 0.8;
+
 }
 
 .title {
@@ -46,6 +64,24 @@ nav {
 
 }
 
+.game-about {
+    padding: 0%;
+    text-align: center;
+}
+
+.shadow {
+
+    color:rgb(255, 0, 0);
+
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
 .container-2 {
 
     display: flex;
@@ -64,7 +100,7 @@ nav {
 
 .head-home {
 
-    height: 18vh;
+    height: 25vh;
     
 }
 
@@ -96,13 +132,67 @@ nav {
 
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 
-    margin-left: 5%;
-    margin-right: 5%;
+    text-align: center;
+
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 1%;
 }
+
+.game-char {
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+
+}
+
+/* Button */
+/* Reference: https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_animate1 */
+.button {
+    display: inline-block;
+    border: 1px solid #ffffff;
+    background-color: #ffffff00;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 
 /* characters.html */
 
@@ -118,7 +208,6 @@ nav {
     margin-top: 5px;
 
 }
-
 
 .head-shot {
     height: 18vh;
@@ -200,5 +289,11 @@ nav {
 .arrow {
     
     height: 100px;
+
+}
+
+.arrow:hover {
+
+    opacity: 0.8;
 
 }
